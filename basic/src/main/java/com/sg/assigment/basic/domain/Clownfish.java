@@ -19,4 +19,8 @@ public class Clownfish extends Fish {
 		return color;
 	}
 	
+	@Override
+	public void doStatistics() {
+		countSwim ++;
+	}
 }

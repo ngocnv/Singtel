@@ -19,4 +19,13 @@ public class Parrot extends Bird  {
 		thingLiveWith.say();
 	}
 
+	@Override
+	public void doStatistics() {
+		countFly ++;
+		countWalk ++;
+		countSing ++;
+	}
+	
+	
+
 }

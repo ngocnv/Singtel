@@ -6,4 +6,11 @@ public class Dog extends Animal implements Thing {
 	public void say() {
 		System.out.println("Woof, woof");
 	}
+
+	@Override
+	public void doStatistics() {
+		countWalk ++;
+		countSing ++;
+		countSwim ++;
+	}
 }

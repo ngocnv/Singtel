@@ -33,5 +33,10 @@ public class Caterpillar extends Animal {
 	public void setContext(Map<String, Boolean> context) {
 		this.context = context;
 	}
+
+	@Override
+	public void doStatistics() {
+		countWalk ++;
+	}
 	
 }

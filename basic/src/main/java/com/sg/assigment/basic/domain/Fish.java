@@ -10,4 +10,11 @@ public class Fish extends Animal implements Swimming {
 	public void sing() {
 		throw new RuntimeException("Fish don't sing!");
 	}
+
+	@Override
+	public void doStatistics() {
+		countSwim ++;
+	}
+	
+	
 }

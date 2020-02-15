@@ -7,4 +7,10 @@ public class Cat extends Animal implements Thing {
 		System.out.println("Meow");
 	}
 
+	@Override
+	public void doStatistics() {
+		countWalk ++;
+		countSing ++;
+	}
+	
 }

@@ -15,5 +15,13 @@ public class Duck extends Bird implements Thing {
 	public void say() {
 		this.sing();
 	}
+
+	@Override
+	public void doStatistics() {
+		countWalk ++;
+		countSing ++;
+		countSwim ++;
+	}
+	
 	
 }

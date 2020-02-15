@@ -9,5 +9,14 @@ public class Rooster extends Chicken implements Crow,Thing {
 	public void say() {
 		sing();
 	}
+
+	@Override
+	public void doStatistics() {
+		countWalk ++;
+		countSing ++;
+		
+	}
+	
+	
 	
 }

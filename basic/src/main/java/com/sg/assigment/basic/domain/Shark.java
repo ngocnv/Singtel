@@ -18,4 +18,11 @@ public class Shark extends Fish {
 	public void eat(Fish fish) {
 		System.out.println("Shark eat fish");
 	}
+
+	@Override
+	public void doStatistics() {
+		countSwim ++;
+	}
+	
+	
 }

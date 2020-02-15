@@ -12,5 +12,10 @@ public class Chicken extends Bird {
 	public void fly() {
 		throw new RuntimeException("Chickend can not fly");
 	}
-	
+
+	@Override
+	public void doStatistics() {
+		countWalk ++;
+		countSing ++;
+	}
 }
