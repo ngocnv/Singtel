@@ -13,7 +13,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.sg.assigment.basic.domain.Clownfish;
-import com.sg.assigment.basic.domain.Fish;
 import com.sg.assigment.basic.enums.Color;
 import com.sg.assigment.basic.enums.Size;
 
