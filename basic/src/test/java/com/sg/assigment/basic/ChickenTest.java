@@ -12,7 +12,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.sg.assigment.basic.domain.Chicken;
-import com.sg.assigment.basic.domain.Duck;
 
 public class ChickenTest {
 	

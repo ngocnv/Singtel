@@ -11,9 +11,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.sg.assigment.basic.domain.Bird;
+import com.sg.assigment.basic.domain.Chicken;
+import com.sg.assigment.basic.domain.Rooster;
 
-public class BirdTest {
+public class RoosterTest {
 	
 	ByteArrayOutputStream baos;
 
@@ -39,13 +40,29 @@ public class BirdTest {
 		PrintStream ps = new PrintStream(baos);
 		PrintStream old = System.out;
 		System.setOut(ps);
-		Bird bird = new Bird();
-		bird.sing();
+		Rooster rooster = new Rooster();
+		rooster.sing();
 		System.out.flush();
 		System.setOut(old);
 		
 		String actual = baos.toString();
-		boolean isCorrect = "I am singing\r\n".equals(actual);
+		boolean isCorrect = "Cock-a-doodle-doo\r\n".equals(actual);
+		assertTrue(isCorrect);
+	}
+	
+	@Test
+	public void testCrow() {
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		PrintStream ps = new PrintStream(baos);
+		PrintStream old = System.out;
+		System.setOut(ps);
+		Rooster rooster = new Rooster();
+		rooster.crow();
+		System.out.flush();
+		System.setOut(old);
+		
+		String actual = baos.toString();
+		boolean isCorrect = "Cock-a-doodle-doo\r\n".equals(actual);
 		assertTrue(isCorrect);
 	}
 
