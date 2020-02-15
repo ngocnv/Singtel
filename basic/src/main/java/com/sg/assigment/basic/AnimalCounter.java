@@ -22,10 +22,10 @@ public class AnimalCounter {
 	
 	
 	public static void main(String[] args) {
-		System.out.println("Count fly: " + Animal.countFly);
-		System.out.println("Count walk: " + Animal.countWalk);
-		System.out.println("Count sing: " + Animal.countSing);
-		System.out.println("Count swim: " + Animal.countSwim);
+		System.out.println("Count fly: " + Animal.countFly); // 3
+		System.out.println("Count walk: " + Animal.countWalk); // 8
+		System.out.println("Count sing: " + Animal.countSing); // 8
+		System.out.println("Count swim: " + Animal.countSwim); // 6 
 		
 	}
 	
