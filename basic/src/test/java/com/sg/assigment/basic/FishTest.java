@@ -12,9 +12,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.sg.assigment.basic.domain.Chicken;
+import com.sg.assigment.basic.domain.Fish;
 
-public class ChickenTest {
-
+public class FishTest {
+	
 	ByteArrayOutputStream baos;
 
 	@BeforeClass
@@ -34,26 +35,39 @@ public class ChickenTest {
 	}
 
 	@Test
-	public void testSing() {
+	public void testSwim() {
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream ps = new PrintStream(baos);
 		PrintStream old = System.out;
 		System.setOut(ps);
-		Chicken chicken = new Chicken();
-		chicken.sing();
+		Fish fish = new Fish();
+		fish.swim();
 		System.out.flush();
 		System.setOut(old);
-
+		
 		String actual = baos.toString();
-		boolean isCorrect = "Cluck, cluck\r\n".equals(actual);
+		boolean isCorrect = "I am swimming\r\n".equals(actual);
 		assertTrue(isCorrect);
 	}
-
+	
+	
 	@Test
-	public void testFly() {
-		Chicken chicken = new Chicken();
+	public void testWalk() {
+		Fish fish = new Fish();
 		try {
-			chicken.fly();
+		fish.walk();
+		}catch(RuntimeException e) {
+			assertTrue(true);
+			return;
+		}
+		assertTrue(false);
+	}
+	
+	@Test
+	public void testSing() {
+		Fish fish = new Fish();
+		try {
+			fish.sing();
 		} catch (RuntimeException e) {
 			assertTrue(true);
 			return;
